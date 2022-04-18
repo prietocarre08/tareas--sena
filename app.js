@@ -5,9 +5,9 @@ document.getElementById('formTask').addEventListener('submit', saveTask);
 
 
 var btn = document.getElementById("btn");
-
+console.log("....")
 btn.addEventListener("click", (e) => {
-
+  console.log("juan")
   document.getElementById("body").classList.toggle("dark")
   document.getElementById("nav").classList.toggle("dark")
   document.getElementById("titleTask").classList.toggle("white")

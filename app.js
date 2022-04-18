@@ -4,7 +4,15 @@ document.getElementById('formTask').addEventListener('submit', saveTask);
 
 
 
+var btn = document.getElementById("btn");
 
+btn.addEventListener("click", (e) => {
+
+  document.getElementById("body").classList.toggle("dark")
+  document.getElementById("nav").classList.toggle("dark")
+  document.getElementById("titleTask").classList.toggle("white")
+ 
+} )
 
 
 
@@ -71,12 +79,4 @@ function getTasks() {
 getTasks();
 //alert("Bienvenido a la pagina de tareas")
 
-var btn = document.getElementById("btn");
 
-btn.addEventListener("click", (e) => {
-
-  document.getElementById("body").classList.toggle("dark")
-  document.getElementById("nav").classList.toggle("dark")
-  document.getElementById("titleTask").classList.toggle("white")
- 
-} )
